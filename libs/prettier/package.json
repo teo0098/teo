@@ -1,0 +1,17 @@
+{
+  "name": "@teo0098/prettier",
+  "version": "0.0.1",
+  "description": "Prettier configuration",
+  "main": "index.js",
+  "author": "Teodor Tkaczyk (https://github.com/teo0098)",
+  "files": [
+    "./index.js"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teo0098/teo.git"
+  }
+}
