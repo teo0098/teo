@@ -4,6 +4,7 @@
   "projects": {
     "portfolio": "apps/portfolio",
     "portfolio-e2e": "apps/portfolio-e2e",
-    "prettier": "libs/prettier"
+    "prettier": "libs/prettier",
+    "tsconfig": "libs/tsconfig"
   }
 }
