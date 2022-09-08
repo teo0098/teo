@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "eslint": "libs/eslint",
+    "eslint-config": "libs/eslint-config",
     "portfolio": "apps/portfolio",
     "portfolio-e2e": "apps/portfolio-e2e",
     "prettier": "libs/prettier",
