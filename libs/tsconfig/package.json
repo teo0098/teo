@@ -1,6 +1,6 @@
 {
   "name": "@teo0098/tsconfig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tsconfig configuration",
   "main": "index.js",
   "author": "Teodor Tkaczyk (https://github.com/teo0098)",

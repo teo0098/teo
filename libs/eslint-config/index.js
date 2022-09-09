@@ -32,6 +32,14 @@ module.exports = {
     'prettier/prettier': ['error'],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'import/prefer-default-export': 'off',
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: ['arrow-function', 'function-declaration'],
+        unnamedComponents: 'arrow-function',
+      },
+    ],
   },
   ignorePatterns: ['node_modules'],
 };
