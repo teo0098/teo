@@ -1,5 +1,11 @@
 # @teo0098/tsconfig
 
+## 0.0.2
+
+### Patch Changes
+
+- Replace jsx compiler option from 'react-jsx' to 'react' for tsconfig/react
+
 ## 0.0.1
 
 ### Patch Changes

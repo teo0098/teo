@@ -7,12 +7,12 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "apps/portfolio-e2e/cypress.config.ts",
-        "devServerTarget": "portfolio:serve:development",
+        "devServerTarget": "portfolio:dev:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "portfolio:serve:production"
+          "devServerTarget": "portfolio:dev:production"
         }
       }
     },

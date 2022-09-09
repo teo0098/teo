@@ -6,6 +6,7 @@
     "portfolio": "apps/portfolio",
     "portfolio-e2e": "apps/portfolio-e2e",
     "prettier": "libs/prettier",
-    "tsconfig": "libs/tsconfig"
+    "tsconfig": "libs/tsconfig",
+    "ui": "libs/ui"
   }
 }
