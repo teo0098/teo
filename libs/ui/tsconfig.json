@@ -1,7 +1,6 @@
 {
   "extends": "@teo0098/tsconfig/react",
   "compilerOptions": {
-    "jsx": "react",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "noImplicitOverride": true,
