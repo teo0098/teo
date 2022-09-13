@@ -26,14 +26,14 @@ jobs:
           scope: '@teo0098'
 
       - name: Install dependencies
-        run: yarn
+        run: npm install
 
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
         with:
           title: Release Tracking
           # this expects you to have a script called release which does a build for your packages and calls changeset publish
-          publish: yarn release
+          publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
