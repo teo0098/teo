@@ -25,19 +25,11 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@teo0098'
 
-      - name: Cache node_modules
-        id: node-modules-cache
-        uses: actions/cache@v2
-        with:
-          path: '**/node_modules'
-          key: node-modules-cache-${{ hashFiles('**/yarn.lock') }}
-
       - name: Install dependencies
-        if: steps.node-modules-cache.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: yarn
 
       - name: Create Release Pull Request or Publish to npm
-        uses: changesets/action@master
+        uses: changesets/action@v1
         with:
           title: Release Tracking
           # this expects you to have a script called release which does a build for your packages and calls changeset publish
