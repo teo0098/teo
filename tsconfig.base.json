@@ -17,7 +17,12 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@teo0098/ui": ["libs/ui/src/index.ts"]
+      "@teo0098/ui": ["libs/ui/src/index.ts"],
+      "@teo0098/prettier": ["libs/prettier/index.js"],
+      "@teo0098/tsconfig/react": ["libs/tsconfig/react.json"],
+      "@teo0098/tsconfig/nextjs": ["libs/tsconfig/nextjs.json"],
+      "@teo0098/tsconfig/base": ["libs/tsconfig/base.json"],
+      "@teo0098/eslint-config": ["libs/eslint-config/index.js"]
     }
   },
   "exclude": ["node_modules", "tmp"]
