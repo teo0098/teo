@@ -22,9 +22,6 @@
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build", "test"]
-    },
-    "test": {
-      "dependsOn": ["lint"]
     }
   },
   "generators": {
