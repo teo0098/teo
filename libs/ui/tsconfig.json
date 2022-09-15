@@ -1,5 +1,5 @@
 {
-  "extends": "@teo0098/tsconfig/react",
+  "extends": "../../tsconfig.base",
   "compilerOptions": {
     "jsx": "react",
     "allowJs": true,
