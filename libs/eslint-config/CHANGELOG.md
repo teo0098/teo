@@ -1,5 +1,11 @@
 # @teo0098/eslint-config
 
+## 0.0.3
+
+### Patch Changes
+
+- Set version of dependencies packages to be fixed
+
 ## 0.0.2
 
 ### Patch Changes
