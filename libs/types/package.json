@@ -1,0 +1,22 @@
+{
+  "name": "@teo0098/types",
+  "version": "0.0.1",
+  "description": "Various types for use in TypeScript projects",
+  "types": "./dist/index.d.ts",
+  "author": "Teodor Tkaczyk (https://github.com/teo0098)",
+  "files": [
+    "./dist/index.d.ts"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teo0098/teo.git"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "build": "tsup ./src/index.ts --dts-only",
+    "dev": "tsup ./src/index.ts --watch --dts-only"
+  }
+}
