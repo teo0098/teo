@@ -1,5 +1,11 @@
 # @teo0098/ui
 
+## 0.1.0
+
+### Minor Changes
+
+- Add new Logo component
+
 ## 0.0.3
 
 ### Patch Changes

@@ -40,6 +40,20 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    'operator-linebreak': 'off',
+    'object-curly-newline': 'off',
+    'react/jsx-props-no-spreading': 'warn',
+    'comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'never',
+      },
+    ],
   },
   ignorePatterns: ['node_modules'],
 };
