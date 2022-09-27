@@ -1,3 +1,9 @@
 {
-  "extends": "../tsconfig/base"
+  "extends": "../tsconfig/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@teo0098/eslint-config": ["../eslint-config/index.js"]
+    }
+  }
 }
