@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: '../eslint-config',
+  extends: '@teo0098/eslint-config',
   parserOptions: {
     tsconfigRootDir: __dirname,
   },

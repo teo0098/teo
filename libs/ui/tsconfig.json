@@ -10,7 +10,8 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@teo0098/types": ["../types/src/index.ts"]
+      "@teo0098/types": ["../types/src/index.ts"],
+      "@teo0098/eslint-config": ["../eslint-config/index.js"]
     }
   }
 }
