@@ -1,5 +1,11 @@
 # @teo0098/eslint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- Change external dependencies to peer dependencies
+
 ## 0.0.4
 
 ### Patch Changes
