@@ -1,5 +1,11 @@
 # @teo0098/tsconfig
 
+## 0.0.4
+
+### Patch Changes
+
+- Change configuration for react
+
 ## 0.0.3
 
 ### Patch Changes

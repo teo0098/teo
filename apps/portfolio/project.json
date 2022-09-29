@@ -50,6 +50,15 @@
         "passWithNoTests": true
       }
     },
+    "test:watch": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/portfolio"],
+      "options": {
+        "jestConfig": "apps/portfolio/jest.config.ts",
+        "passWithNoTests": true,
+        "watch": true
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
