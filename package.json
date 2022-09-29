@@ -15,6 +15,7 @@
     "prebuild": "npm install",
     "build": "nx run-many --target=build",
     "test": "nx run-many --target=test",
+    "test:watch": "nx run-many --target=test:watch",
     "e2e": "nx run-many --target=e2e",
     "lint": "nx run-many --target=lint",
     "changeset": "changeset",
