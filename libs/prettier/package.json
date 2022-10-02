@@ -1,6 +1,6 @@
 {
   "name": "@teo0098/prettier",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Prettier configuration",
   "main": "index.js",
   "author": "Teodor Tkaczyk (https://github.com/teo0098)",
@@ -13,5 +13,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/teo0098/teo.git"
+  },
+  "peerDependencies": {
+    "prettier": "^2.7.1"
   }
 }

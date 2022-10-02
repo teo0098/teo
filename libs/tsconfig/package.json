@@ -1,6 +1,6 @@
 {
   "name": "@teo0098/tsconfig",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Tsconfig configuration",
   "author": "Teodor Tkaczyk (https://github.com/teo0098)",
   "files": [
@@ -14,5 +14,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/teo0098/teo.git"
+  },
+  "peerDependencies": {
+    "typescript": "^4.8.2"
   }
 }

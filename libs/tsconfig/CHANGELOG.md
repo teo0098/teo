@@ -1,5 +1,11 @@
 # @teo0098/tsconfig
 
+## 0.0.5
+
+### Patch Changes
+
+- Add typescript as peer dependency
+
 ## 0.0.4
 
 ### Patch Changes
