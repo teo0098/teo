@@ -2,9 +2,9 @@
  * @type {import('@nrwl/react/module-federation').ModuleFederationConfig}
  * */
 const moduleFederationConfig = {
-  name: 'registration',
+  name: 'chatRegistration',
   exposes: {
-    './Registration': './src/remote-entry.ts',
+    './ChatRegistration': './src/remote-entry.ts',
   },
 };
 

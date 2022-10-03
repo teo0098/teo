@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/registration/src",
+  "sourceRoot": "apps/chatRegistration/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,19 +9,19 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/registration",
-        "index": "apps/registration/src/index.html",
+        "outputPath": "dist/apps/chatRegistration",
+        "index": "apps/chatRegistration/src/index.html",
         "baseHref": "/",
-        "main": "apps/registration/src/main.ts",
-        "polyfills": "apps/registration/src/polyfills.ts",
-        "tsConfig": "apps/registration/tsconfig.json",
+        "main": "apps/chatRegistration/src/main.ts",
+        "polyfills": "apps/chatRegistration/src/polyfills.ts",
+        "tsConfig": "apps/chatRegistration/tsconfig.json",
         "assets": [
-          "apps/registration/src/favicon.ico",
-          "apps/registration/src/assets"
+          "apps/chatRegistration/src/favicon.ico",
+          "apps/chatRegistration/src/assets"
         ],
-        "styles": ["apps/registration/src/styles.css"],
+        "styles": ["apps/chatRegistration/src/styles.css"],
         "scripts": [],
-        "webpackConfig": "apps/registration/webpack.config.js"
+        "webpackConfig": "apps/chatRegistration/webpack.config.js"
       },
       "configurations": {
         "development": {
@@ -33,8 +33,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/registration/src/environments/environment.ts",
-              "with": "apps/registration/src/environments/environment.prod.ts"
+              "replace": "apps/chatRegistration/src/environments/environment.ts",
+              "with": "apps/chatRegistration/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -43,7 +43,7 @@
           "namedChunks": false,
           "extractLicenses": true,
           "vendorChunk": false,
-          "webpackConfig": "apps/registration/webpack.config.prod.js"
+          "webpackConfig": "apps/chatRegistration/webpack.config.prod.js"
         }
       }
     },
@@ -51,16 +51,16 @@
       "executor": "@nrwl/react:module-federation-dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "registration:build",
+        "buildTarget": "chatRegistration:build",
         "hmr": true,
         "port": 4201
       },
       "configurations": {
         "development": {
-          "buildTarget": "registration:build:development"
+          "buildTarget": "chatRegistration:build:development"
         },
         "production": {
-          "buildTarget": "registration:build:production",
+          "buildTarget": "chatRegistration:build:production",
           "hmr": false
         }
       }
@@ -69,22 +69,22 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/registration/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/chatRegistration/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/registration"],
+      "outputs": ["coverage/apps/chatRegistration"],
       "options": {
-        "jestConfig": "apps/registration/jest.config.ts",
+        "jestConfig": "apps/chatRegistration/jest.config.ts",
         "passWithNoTests": true
       }
     },
     "test:watch": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/registration"],
+      "outputs": ["coverage/apps/chatRegistration"],
       "options": {
-        "jestConfig": "apps/registration/jest.config.ts",
+        "jestConfig": "apps/chatRegistration/jest.config.ts",
         "passWithNoTests": true,
         "watch": true
       }
@@ -93,15 +93,15 @@
       "executor": "@nrwl/web:file-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "registration:build",
+        "buildTarget": "chatRegistration:build",
         "port": 4202
       },
       "configurations": {
         "development": {
-          "buildTarget": "registration:build:development"
+          "buildTarget": "chatRegistration:build:development"
         },
         "production": {
-          "buildTarget": "registration:build:production"
+          "buildTarget": "chatRegistration:build:production"
         }
       }
     }

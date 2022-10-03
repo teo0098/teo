@@ -13,6 +13,6 @@ describe('App', () => {
   it('should have a greeting as the title', () => {
     render(<App />);
 
-    expect(screen.getByText(/Registration/gi)).toBeInTheDocument();
+    expect(screen.getByText(/Chat Registration/gi)).toBeInTheDocument();
   });
 });
