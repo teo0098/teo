@@ -1,6 +1,6 @@
 {
   "name": "@teo0098/types",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Various types for use in TypeScript projects",
   "types": "./dist/index.d.ts",
   "author": "Teodor Tkaczyk (https://github.com/teo0098)",

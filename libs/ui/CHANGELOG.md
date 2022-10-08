@@ -1,5 +1,16 @@
 # @teo0098/ui
 
+## 0.2.0
+
+### Minor Changes
+
+- Add new Box component
+- Add new PasswordInput component
+- Add new Popover component
+- Add new Progress component
+- Add new Text component
+- Add new TextInput component
+
 ## 0.1.1
 
 ### Patch Changes

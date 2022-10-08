@@ -1,6 +1,6 @@
 {
   "name": "@teo0098/eslint-config",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Eslint configuration",
   "main": "index.js",
   "author": "Teodor Tkaczyk (https://github.com/teo0098)",
