@@ -1,0 +1,110 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/chatRegistration/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/chatRegistration",
+        "index": "apps/chatRegistration/src/index.html",
+        "baseHref": "/",
+        "main": "apps/chatRegistration/src/main.ts",
+        "polyfills": "apps/chatRegistration/src/polyfills.ts",
+        "tsConfig": "apps/chatRegistration/tsconfig.json",
+        "assets": [
+          "apps/chatRegistration/src/favicon.ico",
+          "apps/chatRegistration/src/assets"
+        ],
+        "styles": ["apps/chatRegistration/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "apps/chatRegistration/webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/chatRegistration/src/environments/environment.ts",
+              "with": "apps/chatRegistration/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "webpackConfig": "apps/chatRegistration/webpack.config.prod.js"
+        }
+      }
+    },
+    "dev": {
+      "executor": "@nrwl/react:module-federation-dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "chatRegistration:build",
+        "hmr": true,
+        "port": 4201
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "chatRegistration:build:development"
+        },
+        "production": {
+          "buildTarget": "chatRegistration:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/chatRegistration/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/chatRegistration"],
+      "options": {
+        "jestConfig": "apps/chatRegistration/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "test:watch": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/chatRegistration"],
+      "options": {
+        "jestConfig": "apps/chatRegistration/jest.config.ts",
+        "passWithNoTests": true,
+        "watch": true
+      }
+    },
+    "serve-static": {
+      "executor": "@nrwl/web:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "chatRegistration:build",
+        "port": 4202
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "chatRegistration:build:development"
+        },
+        "production": {
+          "buildTarget": "chatRegistration:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

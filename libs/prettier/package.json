@@ -1,6 +1,6 @@
 {
   "name": "@teo0098/prettier",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Prettier configuration",
   "main": "index.js",
   "author": "Teodor Tkaczyk (https://github.com/teo0098)",

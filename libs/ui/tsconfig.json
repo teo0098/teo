@@ -11,7 +11,8 @@
     "baseUrl": ".",
     "paths": {
       "@teo0098/types": ["../types/src/index.ts"],
-      "@teo0098/eslint-config": ["../eslint-config/index.js"]
+      "@teo0098/eslint-config": ["../eslint-config/index.js"],
+      "~components/*": ["./src/components/*"]
     }
   }
 }

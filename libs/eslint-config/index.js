@@ -54,6 +54,8 @@ module.exports = {
         functions: 'never',
       },
     ],
+    '@typescript-eslint/indent': 'off',
+    'import/extensions': 'off',
   },
   ignorePatterns: ['node_modules'],
 };

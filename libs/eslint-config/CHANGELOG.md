@@ -1,5 +1,12 @@
 # @teo0098/eslint-config
 
+## 0.0.6
+
+### Patch Changes
+
+- Turn off the rule about typescript indenting
+- Turn off the rule about necessary file extensions in imports
+
 ## 0.0.5
 
 ### Patch Changes

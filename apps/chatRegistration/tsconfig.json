@@ -1,0 +1,17 @@
+{
+  "extends": "../../libs/tsconfig/react",
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@teo0098/eslint-config": ["../../libs/eslint-config/index.js"],
+      "~tools/*": ["./src/tools/*"],
+      "~components/*": ["./src/components/*"]
+    }
+  }
+}
