@@ -11,7 +11,8 @@
     "paths": {
       "@teo0098/eslint-config": ["../../libs/eslint-config/index.js"],
       "~tools/*": ["./src/tools/*"],
-      "~components/*": ["./src/components/*"]
+      "~components/*": ["./src/components/*"],
+      "@teo0098/ui": ["../../libs/ui/index.ts"]
     }
   }
 }
