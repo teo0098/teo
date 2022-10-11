@@ -12,6 +12,7 @@ export default {
     '~tools/(.*)': '<rootDir>/src/tools/$1',
     '~components/(.*)': '<rootDir>/src/components/$1',
   },
+  moduleDirectories: ['@teo0098/ui', 'node_modules'],
   setupFilesAfterEnv: ['./setupTests.ts'],
   coverageDirectory: '../../coverage/apps/chatRegistration',
 };
