@@ -11,8 +11,8 @@ export default {
   moduleNameMapper: {
     '~tools/(.*)': '<rootDir>/src/tools/$1',
     '~components/(.*)': '<rootDir>/src/components/$1',
+    '@teo0098/(.*)': '<rootDir>/../../libs/$1',
   },
-  moduleDirectories: ['@teo0098/ui', 'node_modules'],
   setupFilesAfterEnv: ['./setupTests.ts'],
   coverageDirectory: '../../coverage/apps/chatRegistration',
 };
